@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --box-shadow:0px 5px 10px #000000c0;
+}
+body{
+    font-family:sans-serif;
+    background-color: #0d0e0e;
+}
+.title{
+    font-size:2.5em;
+    letter-spacing:1px;
+    font-weight:300;
+    font-family: 'Rubik Wet Paint', cursive;
+    color:#fff;
+    text-align:center;
+    padding:50px 0;
+}
+
+.container{
+    max-width:1200px;
+    width:90%;
+    margin:0 auto;
+}
+
+.photos__container{
+    width:100%;
+   
+    display: flex;
+    overflow:hidden;
+    justify-content: space-between;
+    flex-wrap:wrap;
+ 
+}
+
+.photos__thumb{
+    width:24%;
+    height:230px;
+    margin-bottom:15px;
+    cursor:pointer;
+    border:3px solid transparent;
+    transition:border .3s ease;
+    overflow: hidden;
+}
+
+.photos__thumb:hover{
+    border:3px solid #fff;
+}
+.photos__thumb:hover .photos__img{
+    transform:scale(1.1);
+}
+.photos__img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    transition:transform .3s ease-in-out;
+    box-shadow: var(--box-shadow);
+    
+}
+
+.pagination__menu{
+    width:100%;
+    overflow: hidden;
+    padding: 20px 30px;
+    list-style:none;
+    display:flex;
+    justify-content: space-between;
+}
+
+.pagination__link{
+    color:#fff;
+    text-decoration:none;
+    font-size:1.3em;
+    padding:10px 0;
+    width:140px;
+    border-radius:10px;
+    border:2px solid #fff;
+    display: block;
+    text-align: center;
+    transition:transform .3s ease;
+}
+
+.pagination__link--right{
+    float:right;
+}
+
+.pagination__link:hover{
+    transform:scale(1.1);
+}
+
+footer{
+ 
+    padding:40px 0 0 0;
+    width: 100%;
+    color:#fff;
+    text-align: center;
+
+}
+
+
+/* STYLES FOR PHOTOS.PHP */
+
+.photo{
+    height:400px;
+    width:40%;
+    margin: 0 auto;
+    
+}
+
+.pagination__menu--photo{
+    justify-content: center;
+}
+
+.photo__description{
+    padding:30px 0;
+    color:#fff;
+    font-size:1.1em;
+    text-align:center;
+}
+
+.pagination--photo{
+    margin-top:80px;
+
+}
+
+/*Styles for the uploaded*/
+
+.form{
+    width:60%;
+    margin:0 auto;
+    padding:0 40px;
+    height:300px;
+    gap:10px;
+}
+
+.form__control{
+    width: 100%;
+    padding:5px 20px ;   
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    margin-bottom:25px;
+    outline:none;
+    border:none;
+    padding:20px ;
+    border:2px solid  #fff;
+    background-color: transparent;
+    transition:border .3s ease;
+    font-size: 1.1em;
+    color:#fff;
+}
+
+
+
+.form__control--file{
+    color:#fff;
+    margin:20px 0 30px;
+    font-size: 1em;
+    
+}
+
+
+
+
+.form__submit{
+    display: block;
+    background-color:transparent;
+    border:2px solid #fff;
+    outline:none;
+    width:100px;
+    margin:15px auto;
+    padding:13px;
+    cursor:pointer;
+    font-size:1.6em;
+    color:#fff;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    overflow:hidden;
+    transition: transform .3s ease;
+    
+}
+
+.form__submit:hover {
+    transform:scale(1.1);
+    border:3px solid #07d107;
+    color:#07d107;
+}
+
+.form__control--textarea{
+    max-width:100%;
+    min-width:100%;
+    min-height: 70px;
+    max-height: 90px;
+    background-color: transparent;
+    border:3px solid #fff;
+    font-size:1.1em;
+    font-family: sans-serif;
+    color:#fff;
+ 
+    overflow: hidden;
+}
